@@ -4,11 +4,11 @@
 
 este projeto apresenta uma análise completa de dados de vendas de café utilizando técnicas de machine learning para predizer a categoria de café que um cliente provavelmente escolherá. foram desenvolvidos dois modelos distintos de classificação utilizando xgboost, cada um com abordagens e objetivos diferentes.
 
-o **modelo 1** realiza classificação binária entre duas categorias amplas ("café preto" vs "leite e doces"), alcançando 68% de acurácia. é otimizado através de randomized search cv e utiliza técnicas de balanceamento de dados para lidar com classes desbalanceadas. ideal para análises rápidas e planejamento estratégico em nível de categoria.
+o **modelo 1** realiza classificação binária entre duas categorias amplas ("café preto" vs "leite e doces"), alcançando 68% de acurácia. é otimizado através de randomized search cv e utiliza técnicas de balanceamento de dados para lidar com classes desbalanceadas.
 
 o **modelo 2** implementa uma arquitetura hierárquica em cascata para classificação multiclasse entre três categorias específicas (chocolate quente, café com leite, café preto), alcançando 61% de acurácia. utiliza dois modelos xgboost sequenciais que decompõem o problema complexo em decisões binárias mais simples, resultando em melhor performance para categorias minoritárias.
 
-ambos os modelos utilizam características temporais (hora do dia com representação cíclica, dia da semana, mês), condições climáticas, tipo de pagamento e interações entre essas variáveis. o modelo 2 adicionalmente incorpora histórico de preferências por cartão do cliente, permitindo personalização das predições.
+ambos os modelos utilizam características temporais (hora do dia com representação cíclica, dia da semana, mês), condições climáticas, tipo de pagamento e interações entre essas variáveis.
 
 ## modelos treinados
 
